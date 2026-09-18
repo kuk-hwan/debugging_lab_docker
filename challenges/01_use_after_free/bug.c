@@ -126,7 +126,7 @@ static void screen_render(Screen *s) {
 
 static void dialog_on_event(Widget *self, int code) {
     if (code == 1) {
-        self->closed = 1;
+        self->closed = code;
         widget_destroy(self);   
     }
 }
