@@ -104,6 +104,7 @@ static void directory_free(Directory *d) {
         free(d->by_id[i]->name);
         free(d->by_id[i]);                 
     }
+    
     d->count = 0;
 }
 
